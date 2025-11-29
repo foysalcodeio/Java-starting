@@ -1,0 +1,13 @@
+Variable = a resuable container for a value
+Primitive = simple value stored directly in memory (stack)
+Reference = memory address (stack) that points to the (heap)
+
+
+Primitive vs Reference
+--------------------------------
+int   	    String
+double   	  array
+char   	    object
+boolean
+
+
