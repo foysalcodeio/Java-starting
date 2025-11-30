@@ -14,16 +14,22 @@ public class Main {
 
         System.out.print("What would you like to buy : ");
         item = scanner.nextLine();
+        if(item.isEmpty()){
+            System.out.println("You didn't enter food name");
+        }
 
         System.out.print("What is the price each food : ");
         price = scanner.nextDouble();
 
         System.out.print("How many would you like : ");
         quantity = scanner.nextInt();
-
-        total = price * quantity;
-        System.out.println("You have bought " + quantity + " " + item + "/s");
-        System.out.println("Your total is " + currency + total);
+        if( quantity < 2) {
+            System.out.println("Add altest 2 more product");
+        }else{
+            total = price * quantity;
+            System.out.println("You have bought " + quantity + " " + item + "/s");
+            System.out.println("Your total is " + currency + total);
+        }
 
         scanner.close();
     }
