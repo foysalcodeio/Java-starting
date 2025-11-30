@@ -1,19 +1,22 @@
 import java.awt.*;
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-    public static void main (String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-       String message = "Foysal Ahmed";
-       // checking index position number
-       System.out.println(message.indexOf("A"));
-       System.out.println(message.replace("y", "*"));
-       System.out.println(message.trim());
-       System.out.println(message.toLowerCase());
+        String email, username, domain;
+        System.out.print("Enter your email : ");
+        email = scanner.nextLine();
+        if(email.contains("@")){
+            username = email.substring(0, email.indexOf("@"));
+            domain = email.substring(email.indexOf("@") + 1);
 
-       System.out.println("Here is the Original string " + message);
-
+            System.out.println(username);
+            System.out.println(domain);
+        }
 
         scanner.close();
     }
