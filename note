@@ -11,6 +11,16 @@ char   	    object
 boolean
 
 
+sortcut
+------------
+fori         -> loop
+sout         -> System.out.println()
+Alt + Insert -> Generate getters/setters/constructors
+Ctrl + Alt + L -> Reformat code
+Ctrl + Space -> Basic autocomplete
+
+
+
 ⭐ Beginner Level
 
 - Login + Registration System
